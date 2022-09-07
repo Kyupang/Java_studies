@@ -31,6 +31,8 @@ public class CalculatorDemo2 {
 	
 	//left right는 여기서 밑에있는 인스턴스의 멤버 변수이다. 
 	//pi 나 base는 클래스의 멤버 변수이다. (클레스에서 값이 할당되어있는 변수들)
+	//클래스의 멤버 변수에 인스턴스가 접근할 수 있다.
+	//클래스자체로는 인스턴스 멤버에 접근할 수 없다. 
 	public static void main(String[] args) {
 		
 		Calculator c1 = new Calculator();
@@ -42,6 +44,8 @@ public class CalculatorDemo2 {
 		c1.sum();
 		System.out.println(Calculator.base);
 		System.out.println(Calculator.PI);
+		
+		
 	}
 
 }
