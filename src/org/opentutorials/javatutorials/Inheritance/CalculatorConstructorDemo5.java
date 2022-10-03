@@ -9,7 +9,7 @@ class Calculator3 {
     //파라미터를 가지는 생성자를 만들시 기본생성자는 만들지 않기 때문이다.
     //그런데 상위클레스에 기본생성자를 만들지 않고도 문제없이 객체가 동작하도록
     //할 수 있는 방법이 있다. 
-    // public Calculator3(){}
+    //public Calculator3(){}
     public Calculator3(int left, int right){
         this.left = left;
         this.right = right;
@@ -32,6 +32,8 @@ class Calculator3 {
 class SubstractionableCalculator3 extends Calculator3 {
     public SubstractionableCalculator3(int left, int right) {
     	super(left,right);
+    	//바로 수퍼를 쓰는 것이다. 부모클래스의 기본생성자를 부모클래스의 
+    	//인스턴스 변수인 left right로 초기화하는 것이다.
     	//this.left = left;
         //this.right = right;
     }
